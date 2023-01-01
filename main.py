@@ -1,12 +1,11 @@
-
 import requests
 import pprint
 import json
 import base64
 import time
 
-MY_ID = 'Paul-Roger'
-MY_TOKEN = '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'
+MY_ID = ''
+MY_TOKEN = ""
 
 # search github iterator fuction *******************
 
@@ -136,7 +135,7 @@ for chkit in checkit:
         # check all pages
 
     pprint.pprint(out_items)
-    with open('data.txt', 'w') as outfile:
+    with open('data.txt', 'a') as outfile:
         json.dump(out_items, outfile, indent=4)
 
     #f*cking GitHub require to wait)
