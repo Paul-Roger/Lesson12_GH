@@ -127,11 +127,12 @@ for chkit in checkit:
                     code_data["status"] = status
                     out_items["unsafe codes"].append(code_data)
                 #print("****4********************************************************************************************")
-                # f*cking GitHub require to wait)
-                time.sleep(3)  # Сон в 2 секунд
-                limit+=1
-                if limit > 10:
-                    break
+            # f*cking GitHub require to wait)
+            time.sleep(3)  # Сон в 3 секунд
+
+        limit += 1
+        if limit > 5:
+            break
         # check all pages
 
     pprint.pprint(out_items)
@@ -139,5 +140,5 @@ for chkit in checkit:
         json.dump(out_items, outfile, indent=4)
 
     #f*cking GitHub require to wait)
-    time.sleep(10) # Сон в 100 секунд
+    time.sleep(10) # Сон в 10 секунд
 
