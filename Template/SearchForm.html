@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Search form</title>
+</head>
+<body align="center">
+    <h1>
+        Укажите данные для поиска:
+    </h1>
+    <form>
+<!--        <label>Язык программирования</label>
+        <p><select size="3" name="language">
+            <option value="phyton">Python</option>
+            <option disabled value="js">JavaScript</option>
+            <option disabled value="java">Java</option>
+        </select></p> -->
+        <p>
+        <label for="langSel">Выберите язык программирования:</label>
+        <input list="Language" id="LangSel" name="Language" value="Python"/>
+        <datalist id="Language">
+            <option selected value="Python"></option>
+            <option value="JavaSkript"></option>
+            <option disabled value="Java"></option>
+        </datalist>
+        </p>
+        <label>Ключевое слово</label>
+        <input type="text" value="" name="keyword" placeholder="ключевое слово">
+        <br><br>
+        <label>Шаблон для поиска</label>
+        <input type="text" value="" name="template" placeholder="шаблон">
+        <br><br>
+        <input type="submit" value="Поиск по GitGub">
+    </form>
+<br><br><br><br><br><br>
+    <p align="center">
+        <a href="index.html">На главную</a>
+    </p>
+</body>
+</html>
